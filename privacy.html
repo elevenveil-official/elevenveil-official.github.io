@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ElevenVeil · Privacidad / Privacy</title>
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#ffffff; --ink:#14181B; --muted:#5B6670; --line:#E5E9EC; --green:#0EA96F; --soft:#EAF7F1; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#101315; --ink:#EDF1F3; --muted:#9AA6AF; --line:#242B30; --soft:#14261F; }
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; line-height:1.7; border-top:4px solid var(--green); }
+  main { max-width:720px; margin:0 auto; padding:32px 20px 72px; }
+  header { display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:32px; }
+  .brand { font-weight:700; font-size:18px; letter-spacing:-0.01em; }
+  .brand span { color:var(--green); }
+  .lang { display:flex; border:1px solid var(--line); border-radius:999px; overflow:hidden; }
+  .lang button { font:inherit; font-size:13px; font-weight:600; padding:6px 14px; border:0; background:transparent; color:var(--muted); cursor:pointer; }
+  .lang button:focus-visible { outline:2px solid var(--green); outline-offset:-2px; }
+  html[data-lang="es"] .lang button[data-set="es"], html[data-lang="en"] .lang button[data-set="en"] { background:var(--green); color:#fff; }
+  h1 { font-size:clamp(28px,5vw,38px); line-height:1.2; letter-spacing:-0.02em; margin:0 0 6px; }
+  .updated { color:var(--muted); font-size:14px; margin:0 0 28px; }
+  h2 { font-size:19px; margin:36px 0 8px; letter-spacing:-0.01em; }
+  p, li { font-size:16px; max-width:68ch; }
+  ul { padding-left:22px; }
+  li { margin:4px 0; }
+  a { color:var(--green); }
+  .note { background:var(--soft); border-left:4px solid var(--green); padding:12px 16px; border-radius:6px; margin:20px 0; }
+  footer { margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:14px; color:var(--muted); }
+  html[data-lang="es"] [lang="en"], html[data-lang="en"] [lang="es"] { display:none; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">Eleven<span>Veil</span></div>
+    <div class="lang" role="group" aria-label="Language / Idioma">
+      <button type="button" data-set="es">ES</button>
+      <button type="button" data-set="en">EN</button>
+    </div>
+  </header>
+
+  <!-- ========================= ESPAÑOL ========================= -->
+  <div lang="es">
+    <h1>Política de privacidad</h1>
+    <p class="updated">Última actualización: 1 de octubre de 2026</p>
+
+    <p>ElevenVeil es una app de fútbol en la que puedes seguir partidos y hacer predicciones. Esta página explica qué datos tuyos usamos, para qué y cómo puedes borrarlos.</p>
+
+    <h2>1. Quién es el responsable</h2>
+    <p>Marc Grohnert Barroso (titular de ElevenVeil), España.<br>Contacto: <a href="mailto:elevenveil.official@gmail.com">elevenveil.official@gmail.com</a></p>
+
+    <h2>2. Qué datos recogemos</h2>
+    <ul>
+      <li><strong>Cuenta:</strong> tu correo electrónico y tu contraseña. La contraseña la gestiona nuestro proveedor de autenticación y nosotros no tenemos acceso a ella en texto claro.</li>
+      <li><strong>Actividad en la app:</strong> tus predicciones (Match Vision y Live Vision), XP, rango, rachas, logros, ElevenCoins y apuestas con ElevenCoins, el anillo que llevas equipado y los equipos que sigues.</li>
+      <li><strong>Foto de perfil:</strong> solo si decides subir una.</li>
+      <li><strong>Ajustes:</strong> si tienes las notificaciones activadas. El idioma elegido se guarda solo en tu dispositivo.</li>
+      <li><strong>Token de notificaciones:</strong> un identificador de tu dispositivo que necesitamos para enviarte avisos de partidos y recordatorios.</li>
+    </ul>
+    <p>No recogemos tu ubicación, tus contactos ni datos de pago. No mostramos publicidad y no vendemos tus datos. Las ElevenCoins son una moneda virtual sin valor monetario y no se pueden canjear por dinero.</p>
+
+    <h2>3. Para qué los usamos y con qué base legal</h2>
+    <ul>
+      <li>Crear y mantener tu cuenta y darte el servicio: mostrar tu progreso, resolver tus predicciones y apuestas, y construir las clasificaciones. Base legal: ejecución del servicio que nos pides (art. 6.1.b RGPD).</li>
+      <li>Enviarte notificaciones y guardar tu foto de perfil. Base legal: tu consentimiento (art. 6.1.a RGPD), que puedes retirar en cualquier momento desactivando las notificaciones en Ajustes o cambiando tu foto.</li>
+    </ul>
+    <p>Tu posición y tu puntuación pueden aparecer en las clasificaciones que ven otros usuarios.</p>
+
+    <h2>4. Con quién los compartimos</h2>
+    <p>Solo con los proveedores que hacen funcionar la app, que tratan los datos por encargo nuestro:</p>
+    <ul>
+      <li><strong>Supabase:</strong> base de datos, autenticación y almacenamiento de fotos.</li>
+      <li><strong>Render:</strong> alojamiento de nuestro servidor.</li>
+      <li><strong>Expo y Google Firebase Cloud Messaging:</strong> envío de notificaciones.</li>
+      <li><strong>API-Football:</strong> datos de partidos. No recibe datos personales tuyos.</li>
+    </ul>
+    <p>Algunos proveedores pueden tratar datos fuera del Espacio Económico Europeo, con garantías adecuadas como las cláusulas contractuales tipo.</p>
+
+    <h2>5. Cuánto tiempo los conservamos</h2>
+    <p>Mientras tengas la cuenta. Cuando la eliminas, borramos tus datos y tu foto.</p>
+
+    <h2>6. Tus derechos</h2>
+    <p>Puedes pedir acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad de tus datos escribiendo a <a href="mailto:elevenveil.official@gmail.com">elevenveil.official@gmail.com</a>. Si crees que no hemos tratado bien tus datos, puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es">www.aepd.es</a>).</p>
+
+    <h2 id="eliminar">7. Cómo eliminar tu cuenta</h2>
+    <p>Desde la app: <strong>Menú → Ajustes → Eliminar cuenta</strong>. Se borra al momento.</p>
+    <p>Si ya no tienes la app, sigue los pasos de <a href="delete-account.html">la página de eliminación de cuenta</a>.</p>
+
+    <h2>8. Menores</h2>
+    <p>ElevenVeil no está dirigida a menores de 14 años y no recogemos sus datos a sabiendas. Si crees que un menor ha creado una cuenta, escríbenos y la eliminaremos.</p>
+
+    <h2>9. Cambios en esta política</h2>
+    <p>Si cambiamos algo importante, actualizaremos la fecha de arriba y lo avisaremos en la app.</p>
+  </div>
+
+  <!-- ========================= ENGLISH ========================= -->
+  <div lang="en">
+    <h1>Privacy policy</h1>
+    <p class="updated">Last updated: October 1, 2026</p>
+
+    <p>ElevenVeil is a football app where you can follow matches and make predictions. This page explains what data we use, why, and how you can delete it.</p>
+
+    <h2>1. Who is responsible</h2>
+    <p>Marc Grohnert Barroso (owner of ElevenVeil), Spain.<br>Contact: <a href="mailto:elevenveil.official@gmail.com">elevenveil.official@gmail.com</a></p>
+
+    <h2>2. What data we collect</h2>
+    <ul>
+      <li><strong>Account:</strong> your email address and password. The password is handled by our authentication provider and we cannot see it in plain text.</li>
+      <li><strong>Activity in the app:</strong> your predictions (Match Vision and Live Vision), XP, rank, streaks, achievements, ElevenCoins and ElevenCoins wagers, the ring you have equipped, and the teams you follow.</li>
+      <li><strong>Profile photo:</strong> only if you choose to upload one.</li>
+      <li><strong>Settings:</strong> whether notifications are on. Your chosen language is stored only on your device.</li>
+      <li><strong>Notification token:</strong> a device identifier we need to send you match alerts and reminders.</li>
+    </ul>
+    <p>We do not collect your location, your contacts or payment data. We show no ads and we do not sell your data. ElevenCoins are a virtual currency with no monetary value and cannot be exchanged for money.</p>
+
+    <h2>3. Why we use it and our legal basis</h2>
+    <ul>
+      <li>To create and maintain your account and provide the service: showing your progress, resolving your predictions and wagers, and building leaderboards. Legal basis: performing the service you request (GDPR art. 6.1.b).</li>
+      <li>To send you notifications and store your profile photo. Legal basis: your consent (GDPR art. 6.1.a), which you can withdraw at any time by turning notifications off in Settings or changing your photo.</li>
+    </ul>
+    <p>Your position and score may appear on leaderboards that other users can see.</p>
+
+    <h2>4. Who we share it with</h2>
+    <p>Only with the providers that make the app work, who process data on our behalf:</p>
+    <ul>
+      <li><strong>Supabase:</strong> database, authentication and photo storage.</li>
+      <li><strong>Render:</strong> hosting for our server.</li>
+      <li><strong>Expo and Google Firebase Cloud Messaging:</strong> delivering notifications.</li>
+      <li><strong>API-Football:</strong> match data. It receives none of your personal data.</li>
+    </ul>
+    <p>Some providers may process data outside the European Economic Area, with appropriate safeguards such as standard contractual clauses.</p>
+
+    <h2>5. How long we keep it</h2>
+    <p>For as long as you have an account. When you delete it, we delete your data and your photo.</p>
+
+    <h2>6. Your rights</h2>
+    <p>You can request access, rectification, erasure, objection, restriction and portability of your data by writing to <a href="mailto:elevenveil.official@gmail.com">elevenveil.official@gmail.com</a>. If you believe we have mishandled your data, you can complain to the Spanish Data Protection Agency (<a href="https://www.aepd.es">www.aepd.es</a>) or your local authority.</p>
+
+    <h2 id="delete">7. How to delete your account</h2>
+    <p>In the app: <strong>Menu → Settings → Delete account</strong>. It is deleted immediately.</p>
+    <p>If you no longer have the app, follow the steps on <a href="delete-account.html">the account deletion page</a>.</p>
+
+    <h2>8. Children</h2>
+    <p>ElevenVeil is not directed at children under 14 and we do not knowingly collect their data. If you believe a child has created an account, write to us and we will delete it.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>If we change something important, we will update the date above and let you know in the app.</p>
+  </div>
+
+  <footer>
+    <a href="delete-account.html">Eliminar cuenta / Delete account</a>
+  </footer>
+</main>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var saved = null;
+    try { saved = localStorage.getItem('ev-lang'); } catch (e) {}
+    var initial = saved || ((navigator.language || 'es').toLowerCase().indexOf('es') === 0 ? 'es' : 'en');
+    function setLang(l) {
+      root.setAttribute('data-lang', l);
+      root.setAttribute('lang', l);
+      try { localStorage.setItem('ev-lang', l); } catch (e) {}
+    }
+    setLang(initial);
+    document.querySelectorAll('.lang button').forEach(function (b) {
+      b.addEventListener('click', function () { setLang(b.getAttribute('data-set')); });
+    });
+  })();
+</script>
+</body>
+</html>
