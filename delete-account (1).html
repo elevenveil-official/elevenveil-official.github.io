@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ElevenVeil · Eliminar cuenta / Delete account</title>
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#ffffff; --ink:#14181B; --muted:#5B6670; --line:#E5E9EC; --green:#0EA96F; --soft:#EAF7F1; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#101315; --ink:#EDF1F3; --muted:#9AA6AF; --line:#242B30; --soft:#14261F; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; line-height:1.7; border-top:4px solid var(--green); }
+  main { max-width:720px; margin:0 auto; padding:32px 20px 72px; }
+  header { display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:32px; }
+  .brand { font-weight:700; font-size:18px; letter-spacing:-0.01em; }
+  .brand span { color:var(--green); }
+  .lang { display:flex; border:1px solid var(--line); border-radius:999px; overflow:hidden; }
+  .lang button { font:inherit; font-size:13px; font-weight:600; padding:6px 14px; border:0; background:transparent; color:var(--muted); cursor:pointer; }
+  .lang button:focus-visible { outline:2px solid var(--green); outline-offset:-2px; }
+  html[data-lang="es"] .lang button[data-set="es"], html[data-lang="en"] .lang button[data-set="en"] { background:var(--green); color:#fff; }
+  h1 { font-size:clamp(28px,5vw,38px); line-height:1.2; letter-spacing:-0.02em; margin:0 0 12px; }
+  h2 { font-size:19px; margin:36px 0 8px; letter-spacing:-0.01em; }
+  p, li { font-size:16px; max-width:68ch; }
+  ul, ol { padding-left:22px; }
+  li { margin:6px 0; }
+  a { color:var(--green); }
+  .card { background:var(--soft); border-left:4px solid var(--green); padding:14px 18px; border-radius:6px; margin:16px 0; }
+  .card p { margin:4px 0; }
+  footer { margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:14px; color:var(--muted); }
+  html[data-lang="es"] [lang="en"], html[data-lang="en"] [lang="es"] { display:none; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">Eleven<span>Veil</span></div>
+    <div class="lang" role="group" aria-label="Language / Idioma">
+      <button type="button" data-set="es">ES</button>
+      <button type="button" data-set="en">EN</button>
+    </div>
+  </header>
+
+  <!-- ========================= ESPAÑOL ========================= -->
+  <div lang="es">
+    <h1>Eliminar tu cuenta de ElevenVeil</h1>
+    <p>Puedes borrar tu cuenta y tus datos cuando quieras. Elige la opción que te venga mejor.</p>
+
+    <h2>Opción 1: desde la app (inmediato)</h2>
+    <ol>
+      <li>Abre ElevenVeil e inicia sesión.</li>
+      <li>Toca el menú y entra en <strong>Ajustes</strong>.</li>
+      <li>Pulsa <strong>Eliminar cuenta</strong> y confirma.</li>
+    </ol>
+
+    <h2>Opción 2: por correo, si ya no tienes la app</h2>
+    <p>Escribe a <a href="mailto:elevenveil.official@gmail.com?subject=Eliminar%20mi%20cuenta%20de%20ElevenVeil">elevenveil.official@gmail.com</a> con el asunto <strong>Eliminar mi cuenta de ElevenVeil</strong>, desde el mismo correo con el que te registraste. Borraremos la cuenta en un máximo de 30 días y te confirmaremos por correo.</p>
+
+    <h2>Qué se borra</h2>
+    <div class="card">
+      <ul>
+        <li>Tu cuenta y tu correo electrónico.</li>
+        <li>Tu perfil: XP, rango, rachas, logros, ElevenCoins y anillo equipado.</li>
+        <li>Tus predicciones y apuestas con ElevenCoins.</li>
+        <li>Los equipos que sigues y tu token de notificaciones.</li>
+        <li>Tu foto de perfil y tu nombre de jugador.</li>
+        <li>Tu pertenencia a ligas privadas. Las ligas siguen existiendo para sus otros miembros.</li>
+        <li>Tus cofres, escudos de racha y cosméticos.</li>
+      </ul>
+    </div>
+    <p>El borrado es definitivo y no se puede deshacer.</p>
+
+    <p>Más información en la <a href="privacy.html">política de privacidad</a>.</p>
+  </div>
+
+  <!-- ========================= ENGLISH ========================= -->
+  <div lang="en">
+    <h1>Delete your ElevenVeil account</h1>
+    <p>You can delete your account and your data at any time. Choose whichever option suits you.</p>
+
+    <h2>Option 1: in the app (immediate)</h2>
+    <ol>
+      <li>Open ElevenVeil and sign in.</li>
+      <li>Tap the menu and go to <strong>Settings</strong>.</li>
+      <li>Tap <strong>Delete account</strong> and confirm.</li>
+    </ol>
+
+    <h2>Option 2: by email, if you no longer have the app</h2>
+    <p>Write to <a href="mailto:elevenveil.official@gmail.com?subject=Delete%20my%20ElevenVeil%20account">elevenveil.official@gmail.com</a> with the subject <strong>Delete my ElevenVeil account</strong>, from the same email address you signed up with. We will delete the account within 30 days at most and confirm by email.</p>
+
+    <h2>What gets deleted</h2>
+    <div class="card">
+      <ul>
+        <li>Your account and email address.</li>
+        <li>Your profile: XP, rank, streaks, achievements, ElevenCoins and equipped ring.</li>
+        <li>Your predictions and ElevenCoins wagers.</li>
+        <li>The teams you follow and your notification token.</li>
+        <li>Your profile photo and player name.</li>
+        <li>Your membership in private leagues. The leagues keep existing for their other members.</li>
+        <li>Your chests, streak shields and cosmetics.</li>
+      </ul>
+    </div>
+    <p>Deletion is permanent and cannot be undone.</p>
+
+    <p>More details in the <a href="privacy.html">privacy policy</a>.</p>
+  </div>
+
+  <footer>
+    <a href="privacy.html">Privacidad / Privacy</a>
+  </footer>
+</main>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var saved = null;
+    try { saved = localStorage.getItem('ev-lang'); } catch (e) {}
+    var initial = saved || ((navigator.language || 'es').toLowerCase().indexOf('es') === 0 ? 'es' : 'en');
+    function setLang(l) {
+      root.setAttribute('data-lang', l);
+      root.setAttribute('lang', l);
+      try { localStorage.setItem('ev-lang', l); } catch (e) {}
+    }
+    setLang(initial);
+    document.querySelectorAll('.lang button').forEach(function (b) {
+      b.addEventListener('click', function () { setLang(b.getAttribute('data-set')); });
+    });
+  })();
+</script>
+</body>
+</html>
